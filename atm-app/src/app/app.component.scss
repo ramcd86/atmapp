@@ -1,0 +1,105 @@
+.wrapper {
+    background-image: url('./../assets/img/beanstalk.png');
+    padding: {
+        top: 0vh;
+        bottom: 0vh;
+        left: 15vw;
+        right: 15vw;
+    }
+    .container--AtmApp {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        width: 70vw;
+        height: 100vh;
+        padding-top: 10vh;
+        background: rgb(34,32,32);
+        background: radial-gradient(circle, rgba(34,32,32,1) 0%, rgba(69,69,69,1) 100%);
+        .concave-interaction-area {
+            width: 60vw;
+            height: 60vh;
+            margin: {
+                bottom: 30vh;
+                left: 5vw;
+                right: 5vw;
+            }
+            border-radius: 20px;
+            background: rgb(69,69,69);
+            background: radial-gradient(circle, rgba(69,69,69,1) 0%, rgba(34,32,32,1) 100%);
+
+            .screen-panel {
+                padding: {
+                    left: 5vw;
+                    right: 5vw;
+                    top: 5vh;
+                    bottom: 5vh;
+                }
+                .prelog-text {
+                    padding-top: 50px;
+                }
+                > div {
+                    background-color: aqua;
+                    width: 100%;
+                    display: block;
+                    min-height: 50vh;
+                    border-radius: 20px;
+                    padding: 15px;
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                }
+            }
+            .input-panel {
+                padding: {
+                    left: 5vw;
+                    right: 5vw;
+                    top: 5vh;
+                    bottom: 5vh;
+                }
+                > div > div:first-child {
+                    > div {
+                        min-height: 5vh;
+                        border-radius: 20px;
+                        padding: 15px;
+                        margin-bottom: 20px;
+                        background: rgb(34,32,32);
+                        background: linear-gradient(138deg, rgba(34,32,32,1) 0%, rgba(69,69,69,1) 100%);
+                        color: black;
+                        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                    }
+                }
+                > div > div:last-child {
+                    > div {
+                        min-height: calc(45vh - 20px);
+                        border-radius: 20px;
+                        padding: 15px;
+                        > .row > div {
+                            padding: 5px;
+                            > div {
+                                background: rgb(230,226,226);
+                                background: linear-gradient(180deg, rgba(230,226,226,1) 0%, rgba(171,170,170,1) 100%);
+                                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                                padding-top: 15px;
+                                background-color: #eee;
+                                min-height: 7vh;
+                                border-radius: 10px;
+                                cursor: click;
+                                &.cancel {
+                                    color: white;
+                                    background: rgb(224,0,0);
+                                    background: linear-gradient(180deg, rgba(224,0,0,1) 0%, rgba(184,0,0,1) 100%);
+                                }
+                                &.clear {
+                                    color: white;
+                                    background: rgb(224,206,0);
+                                    background: linear-gradient(180deg, rgba(224,206,0,1) 0%, rgba(184,111,0,1) 100%);
+                                }
+                                &.ok {
+                                    color: white;
+                                    background: rgb(0,224,37);
+                                    background: linear-gradient(180deg, rgba(0,224,37,1) 0%, rgba(28,184,0,1) 100%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
