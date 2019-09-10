@@ -11,11 +11,14 @@
                 <br><br><br>
                 Please enter your pin:
                 <br><br>
-                {{pin}}</div>
+                <span *ngFor="let pinNumber of pin">{{pinNumber}}</span> 
+                <br><br>
+                <div class="error-text" *ngIf="error !== ''">{{error}}</div>
+                </div>
           </div>
 
           <div *ngIf="!isLoginPage">
-              <div [ngClass]="classList">{{screenText}}<br></div>
+              <div [ngClass]="classList">{{screenText}} logged in<br></div>
           </div>
 
         </div>
