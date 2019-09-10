@@ -84,7 +84,6 @@ export class AppComponent {
       }
       this.getData(payLoad).subscribe((response: any) => {
         console.log("TCL: AppComponent -> successfulAccess:any -> response", response)
-
       })
     }
 
@@ -157,9 +156,6 @@ export class AppComponent {
         break;
       }
     }
-
-
-    // console.log('pinPageHandler', input);
   }
 
   public atmPageHandler(input: any): void {
