@@ -11,8 +11,6 @@ const SECRET_KEY = [1,1,1,1];
 })
 export class AppComponent {
 
-  title = 'atm-app';
-
   public screenText: string;
   public classList: string;
   public timeInfo: string;
@@ -26,24 +24,13 @@ export class AppComponent {
   
   constructor(private http: HttpClient) {
 
-    // this.error = "ERROR";
-
     this.enteredItems = 0;
-
     this.basePinState = [-1,-1,-1,-1];
-
     this.pinInput = [-1,-1,-1,-1];
-
     this.canBeAltered = true;
-
-
-
     this.pin = [' _ ',' _ ',' _ ',' _ '];
-
     this.isLoginPage = true;
-
     this.screenText = "Welcome to ATMBank.";
-
     this.classList = "prelog-text text-center";
 
     const timeUpdater = () => {
@@ -105,8 +92,6 @@ export class AppComponent {
         this.canBeAltered = true;
       }
     }
-
-
 
     if ((typeof input === 'number') && this.isLoginPage) {
       if ((this.pinInput[this.enteredItems] === -1) && (this.enteredItems <= 3)) {
